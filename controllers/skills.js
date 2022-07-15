@@ -8,11 +8,13 @@ module.exports = {
  function index(req, res) {
      const skills = Skill.getAll();
     res.render('skills/index', { skills });
+    console.log("hello");
   };
 
   function show(req, res) {
     const skill = Skill.getOne(req.params.id);
-    res.render('skills/show', { skill }); 
+    res.render('skills/show', { skill });
+    console.log("goodbye"); 
   }
 
  
