@@ -6,16 +6,13 @@ module.exports = {
   };
   
  function index(req, res) {
-    res.render('skills/index', {
-      skills: Skill.getAll()
-    });
+     const skills = Skill.getAll();
+    res.render('skills/index', { skills });
   };
 
   function show(req, res) {
-    res.render('skills/show', {
-      skills: Skill.getOne(req.params.id),
-    });
+    const skill = Skill.getOne(req.params.id);
+    res.render('skills/show', { skill }); 
   }
-
 
  
