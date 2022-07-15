@@ -1,6 +1,11 @@
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 30px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #7F8C8D;
 }
 
 a {
@@ -14,7 +19,6 @@ a {
 	
 .delete-form button {
   color: red;
-  display: inline-block;
 }
 	
 li {
