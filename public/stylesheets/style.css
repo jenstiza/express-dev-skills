@@ -14,6 +14,7 @@ a {
 	
 .delete-form button {
   color: red;
+  display: inline-block
 }
 	
 li {
