@@ -14,7 +14,7 @@ module.exports = {
   function show(req, res) {
     const skill = Skill.getOne(req.params.id);
     res.render('skills/show', { skill });
-    console.log("goodbye"); 
+    console.log("goodbye");
   }
 
  
